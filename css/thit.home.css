@@ -1,0 +1,143 @@
+* {
+	font-family: Roboto, "Segoe UI", "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Noto Sans CJK SC Light", "Source Han Sans CN Light", "Microsoft YaHei Light", "Microsoft YaHei", Segoe, Arial, sans-serif;
+}
+
+code {
+	font-family: monospace;
+	font-size: .875em;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+a {
+	color: inherit;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+}
+
+header {
+	padding: 30px 60px;
+}
+
+button {
+	background-color: transparent;
+	border: 2px rgba(0, 0, 0, 0.5) solid;
+	padding: 4px 10px;
+	cursor: pointer;
+}
+button:hover {
+	background-color: rgba(255, 255, 255, .7);
+}
+
+nav a {
+	padding: 0 .5em;
+	font-weight: bold;
+	color: #888;
+	text-decoration: none;
+}
+nav a:hover {
+	border-bottom: #888 solid;
+	color: #333;
+}
+
+nav a.selected {
+	font-weight: bold;
+	color: #222;
+	border-bottom: #222 solid;
+}
+nav a.title {
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: #222;
+	margin-right: 1em;
+}
+
+nav > .right {
+	float: right;
+}
+
+nav #contact {
+	font-size: 1.1em;
+}
+
+.main {
+	flex: 1;
+	position: relative;
+	padding: 1rem 4rem;
+}
+
+footer {
+	background: #2196f3;
+	/* position: absolute;
+	bottom: 0;
+	width: 100%; */
+	text-align: center;
+	color: #eee;
+	padding: 50px 0;
+}
+
+/* footer::before {
+	content: '';
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%232196f3' fill-opacity='1' d='M0,160L16,144C32,128,64,96,96,117.3C128,139,160,213,192,240C224,267,256,245,288,208C320,171,352,117,384,133.3C416,149,448,235,480,272C512,309,544,299,576,266.7C608,235,640,181,672,176C704,171,736,213,768,218.7C800,224,832,192,864,160C896,128,928,96,960,117.3C992,139,1024,213,1056,224C1088,235,1120,181,1152,165.3C1184,149,1216,171,1248,160C1280,149,1312,107,1344,90.7C1376,75,1408,85,1424,90.7L1440,96L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+	background-color: #2196f3;
+    background-repeat: no-repeat;
+	position: absolute;
+    top: -200px;
+    height: 100px;
+    width: 100vw;
+    left: 0;
+} */
+
+
+.centered {
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 40%;
+	transform: translateY(-50%);
+}
+
+.slogan {
+	text-align: center;
+	font-size: 4rem;
+	margin: 0;
+}
+
+.desc {
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+}
+
+article {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+article h1 {
+	font-size: 2.5rem;
+}
+
+article h2 {
+	font-size: 2rem;
+}
+
+article h2 {
+	font-size: 1.6rem;
+}
+
+@media (max-width: 768px) {
+
+}

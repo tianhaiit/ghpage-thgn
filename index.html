@@ -1,45 +1,83 @@
-
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>THGN | Tianhai InfoTech</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/thit.home.css" charset="utf-8">
+		<title>Tianhai Network</title>
 	</head>
 	<body>
-		<h1>Tianhai Global Network</h1>
-		
-		<h2>Introduce</h2>
-		<p>Tianhai Global Network(THGN, <a href="https://bgp.he.net/AS4842">AS4842</a>) is operated by <a href="http://www.tianhai.info">Tianhai InfoTech</a>, a tiny geek team.</p>
+		<div class="wrapper">
+			<header>
+				<nav>
+					<a href="index.html" class="title">Tianhai Network</a>
+				</nav>
+			</header>
 
-		<h2>Peering</h2>
-		<p>We have an open peering policy. You can peer with us through Internet eXchanges that we have in common.</p>
-		
-		<h2>IX</h2>
-		<ul>
-			<li><a href="https://www.peeringdb.com/ix/123">KleyReX</a>, Frankfurt, DE</li>
-			<li><a href="https://locix.online/">LocIX</a>, Frankfurt, DE</li>
-			<li><a href="https://evix.org/">eVIX</a>, Fremont, US</li>
-		</ul>
-		
-		<h2>Locations</h2>
-		<ul>
-			<li>Hong Kong SAR</li>
-			<li>Jinhua, CN</li>
-			<li>Tokyo, JP</li>
-			<li>Los Angeles, US</li>
-			<li>Fremont, US</li>
-			<li>Paris, FR</li>
-			<li>Frankfurt am Main, DE</li>
-		</ul>
+			<div class="main">
+				<article>
+					<p>Tianhai Global Network(THGN, <a href="https://bgp.he.net/AS4842">AS4842</a>) is operated by <a href="http://www.tianhai.info">Tianhai InfoTech</a>, a tiny geek team.</p>
 
-		<h2>Contact</h2>
-		<p>Send email to <span id="contact-mailbox">Email Protected (needs JavaScript).</span>. Replying maybe slow.</p>
+					<h2>Peering</h2>
+					<p>We have an open peering policy. You can peer with us through Internet eXchanges <i>(listed in IX section)</i> that we have in common.</p>
+					<p>For your convenience, here are more info about peering.</p>
+					<ul>
+						<li>ASN: <code>4842</code></li>
+						<li>AS-SET: <code>AS-TIANHAI</code></li>
+						<li>Suggested IPv4 Prefix limit: <code>50</code></li>
+						<li>Suggested IPv6 Prefix limit: <code>50</code></li>
+					</ul>
 
-		<h2>More</h2>
-		<p>AS209417 is also an ASN owned by us, which is used by THGN previously. It's only used some special cases now.</p>
-		<p><del>Yes, We're too lazy to design a page for it.</del></p>
-		
-		<script>
-			var contactMailbox = ["c","o","n","t","a","c","t","@","t","i","a","n","h","a","i",".","i","n","f","o"];
-			document.getElementById('contact-mailbox').textContent = contactMailbox.join('');
-		</script>
+					<h2>Contact</h2>
+					<p>To get in touch with us, please send mail to the following mailboxes.</p>
+					<ul>
+						<li>Abuse: <code id="mail-protection-abuse"></code></li>
+						<li>NOC: <code id="mail-protection-noc"></code></li>
+						<li>Support: <code id="mail-protection-support"></code></li>
+					</ul>
+
+					<h2>Service</h2>
+					<p>LIR service (ASN and IPv6 block) is also provided, please contact us by support mailbox for more information.</p>
+
+					<h2>IX</h2>
+					<ul>
+						<li>
+							<a href="https://www.hkix.net/">HKIX</a>, Hong Kong, HK
+							<ul>
+								<li>IPv4: <code>123.255.92.42</code></li>
+								<li>IPv6: <code>2001:7fa:0:1::ca28:a22a</code></li>
+							</ul>
+						</li>
+						<li>
+							<a href="https://www.peeringdb.com/ix/123">KleyReX</a>, Frankfurt, DE
+							<ul>
+								<li>IPv4: <code>193.189.82.102</code></li>
+								<li>IPv6: <code>2001:7f8:33::a120:9417:1</code></li>
+							</ul>
+						</li>
+						<li>
+							<a href="https://locix.online/">LocIX</a>, Frankfurt, DE
+							<ul>
+								<li>IPv4: <code>185.1.166.105</code></li>
+								<li>IPv6: <code>2001:7f8:f2:e1:0:a100:4842:1</code></li>
+							</ul>
+						</li>
+					</ul>
+
+					<h2>More</h2>
+					<p>AS209417 is also apart of Tianhai Network, it's used for experiment and research only.</p>
+				</article>
+			</div>
+
+			<footer>
+				<p>
+					2013-2020 Tianhai InfoTech.
+				</p>
+			</footer>
+
+			<script>
+				['abuse', 'support', 'noc'].forEach(s => document.getElementById('mail-protection-'+s).textContent = [s, 'tianhai.info'].join('@'));
+			</script>
+		</div>
 	</body>
 </html>
